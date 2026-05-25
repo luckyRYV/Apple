@@ -1,128 +1,188 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mac</title>
-    <link rel="Stylesheet" href="src/output.css" />
+    <title>Mac</title>
+
+    <link rel="stylesheet" href="src/output.css" />
   </head>
 
   <body class="bg-[#f5f5f7] text-black font-sans">
-    <!-- Bagian Navbar -->
+    <!-- NAVBAR -->
     <nav
-      class="fixed top-0 w-full z-50 backdrop-blur-md bg-black/70 text-gray-300"
+      class="fixed top-0 w-full z-50 backdrop-blur-md bg-black/80 text-gray-300"
     >
       <div
         class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between"
       >
         <!-- Logo -->
-        <div class="text-white text-xl">
-          <a href="index.html">
-            <img class="w-5 ml-2" src="img/apple.png" alt="" />
-          </a>
-        </div>
+        <a href="index.html">
+          <img class="w-5" src="img/apple.png" alt="Apple Logo" />
+        </a>
 
         <!-- Menu -->
-        <ul class="hidden md:flex gap-12 text-sm">
-          <li class="hover:text-white cursor-pointer">
-            <a href="mac.html">Mac</a>
+        <ul class="hidden md:flex gap-10 text-sm">
+          <li><a class="hover:text-white" href="mac.html">Mac</a></li>
+          <li><a class="hover:text-white" href="ipad.html">iPad</a></li>
+          <li><a class="hover:text-white" href="iphone.html">iPhone</a></li>
+          <li>
+            <a class="hover:text-white" href="smartwatch.html">Watch</a>
           </li>
-          <li class="hover:text-white cursor-pointer">
-            <a href="ipad.html">Ipad</a>
-          </li>
-          <li class="hover:text-white cursor-pointer">
-            <a href="iphone.html">iPhone</a>
-          </li>
-          <li class="hover:text-white cursor-pointer">
-            <a href="smartwatch.html">Watch</a>
-          </li>
-          <li class="hover:text-white cursor-pointer">AirPods</li>
-          <li class="hover:text-white cursor-pointer">TV & Rumah</li>
-          <li class="hover:text-white cursor-pointer">Hiburan</li>
-          <li class="hover:text-white cursor-pointer">Dukungan</li>
-          <li class="hover:text-white cursor-pointer">Tempat Membeli</li>
+          <li><a class="hover:text-white" href="#">AirPods</a></li>
+          <li><a class="hover:text-white" href="#">TV & Rumah</a></li>
+          <li><a class="hover:text-white" href="#">Hiburan</a></li>
+          <li><a class="hover:text-white" href="#">Dukungan</a></li>
+          <li><a class="hover:text-white" href="#">Tempat Membeli</a></li>
         </ul>
 
         <!-- Search -->
-        <div class="hover:text-white cursor-pointer">
-          <img src="img/search.png" class="w-5" />
-        </div>
+        <button class="hover:opacity-80">
+          <img src="img/search.png" class="w-5" alt="Search" />
+        </button>
       </div>
     </nav>
 
-    <section class="max-w-7xl mx-auto px-6 py-10 pt-20">
-      <h1 class="text-5xl font-semibold mb-8 mt-4">Mac</h1>
+    <!-- HERO -->
+    <section class="max-w-7xl mx-auto px-6 pt-28 pb-10">
+      <h1 class="text-5xl font-semibold mb-10">Mac</h1>
 
+      <!-- ICON MENU -->
       <div
-        class="grid grid-cols-4 md:grid-cols-8 gap-6 text-center text-sm mb-14"
+        class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-6 text-center"
       >
+        <!-- Item -->
         <div>
           <div
-            class="h-20 bg-white rounded-xl shadow flex justify-center items-start"
+            class="h-20 bg-white rounded-xl shadow flex items-center justify-center"
           >
             <img
-              src="/img/macbook.png"
-              class="object-contain w-[100px] mt-3"
+              src="img/macbook neo.png"
+              class="w-24 object-contain"
               alt=""
             />
           </div>
-          <p class="mt-2">Macbook Neo</p>
-          <span class="text-orange-500 text-xs">Baru</span>
+
+          <p class="mt-3 text-sm">MacBook Neo</p>
+          <span class="text-xs text-orange-500">Baru</span>
         </div>
+
         <div>
-          <div class="h-16 bg-white rounded-xl shadow"></div>
-          <p class="mt-2">Macbook Air</p>
-          <span class="text-orange-500 text-xs">Baru</span>
+          <div
+            class="h-20 bg-white rounded-xl shadow flex items-center justify-center"
+          >
+            <img
+              src="img/macbook air.png"
+              class="w-24 object-contain"
+              alt=""
+            />
+          </div>
+
+          <p class="mt-3 text-sm">MacBook Air</p>
+          <span class="text-xs text-orange-500">Baru</span>
         </div>
+
         <div>
-          <div class="h-16 bg-white rounded-xl shadow"></div>
-          <p class="mt-2">Macbook Pro</p>
-          <span class="text-orange-500 text-xs">Baru</span>
+          <div
+            class="h-20 bg-white rounded-xl shadow flex items-center justify-center"
+          >
+            <img
+              src="img/macbook pro.png"
+              class="w-24 object-contain"
+              alt=""
+            />
+          </div>
+
+          <p class="mt-3 text-sm">MacBook Pro</p>
+          <span class="text-xs text-orange-500">Baru</span>
         </div>
+
         <div>
-          <div class="h-16 bg-white rounded-xl shadow"></div>
-          <p class="mt-2">iMac</p>
+          <div
+            class="h-20 bg-white rounded-xl shadow flex items-center justify-center"
+          >
+            <img src="img/imac.png" class="w-24 object-contain" alt="" />
+          </div>
+
+          <p class="mt-3 text-sm">iMac</p>
         </div>
+
         <div>
-          <div class="h-16 bg-white rounded-xl shadow"></div>
-          <p class="mt-2">Mac mini</p>
+          <div
+            class="h-20 bg-white rounded-xl shadow flex items-center justify-center"
+          >
+            <img src="img/mac mini.png" class="w-24 object-contain" alt="" />
+          </div>
+
+          <p class="mt-3 text-sm">Mac mini</p>
         </div>
+
         <div>
-          <div class="h-16 bg-white rounded-xl shadow"></div>
-          <p class="mt-2">Mac Studio</p>
+          <div
+            class="h-20 bg-white rounded-xl shadow flex items-center justify-center"
+          >
+            <img src="img/mac gede.png" class="w-24 object-contain" alt="" />
+          </div>
+
+          <p class="mt-3 text-sm">Mac Studio</p>
         </div>
+
         <div>
-          <div class="h-16 bg-white rounded-xl shadow"></div>
-          <p class="mt-2">Bandingkan</p>
+          <div
+            class="h-20 bg-white rounded-xl shadow flex items-center justify-center"
+          >
+            <img src="img/bandingkan.png" class="w-24 object-contain" alt="" />
+          </div>
+
+          <p class="mt-3 text-sm">Bandingkan</p>
         </div>
+
         <div>
-          <div class="h-16 bg-white rounded-xl shadow"></div>
-          <p class="mt-2">Layar</p>
-          <span class="text-orange-500 text-xs">Baru</span>
+          <div
+            class="h-20 bg-white rounded-xl shadow flex items-center justify-center"
+          >
+            <img src="img/layar.png" class="w-24 object-contain" alt="" />
+          </div>
+
+          <p class="mt-3 text-sm">Layar</p>
+          <span class="text-xs text-orange-500">Baru</span>
         </div>
       </div>
+    </section>
 
-      <h2 class="text-4xl font-bold text-gray-900 mb-6">
-        Jelajahi jajarannya.
-      </h2>
+    <!-- PRODUK -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+      <h2 class="text-4xl font-bold mb-8">Jelajahi jajarannya.</h2>
 
-      <div class="inline-flex bg-gray-200 rounded-full p-1 gap-1 mb-10">
+      <!-- FILTER -->
+      <div class="inline-flex bg-gray-200 rounded-full p-1 gap-1 mb-12">
         <button class="px-5 py-2 bg-black text-white rounded-full">
-          Semua produk
+          Semua Produk
         </button>
-        <button class="px-5 py-2 rounded-full">Laptop</button>
-        <button class="px-5 py-2 rounded-full">Desktop</button>
-        <button class="px-5 py-2 rounded-full">Layar</button>
+
+        <button class="px-5 py-2 rounded-full hover:bg-white">
+          Laptop
+        </button>
+
+        <button class="px-5 py-2 rounded-full hover:bg-white">
+          Desktop
+        </button>
+
+        <button class="px-5 py-2 rounded-full hover:bg-white">Layar</button>
       </div>
 
-      <!-- Product Scroll -->
-      <div class="flex gap-6 overflow-x-auto scrollbar-hide pb-4 scroll-smooth">
-        <!-- Card 1 -->
+      <!-- PRODUCT CARDS -->
+      <div class="flex gap-6 overflow-x-auto pb-4">
+        <!-- CARD -->
         <div
-          class="min-w-[380px] bg-white rounded-3xl p-6 text-center shadow-sm"
+          class="min-w-[350px] bg-white rounded-3xl p-8 shadow-sm text-center"
         >
-          <img src="img/mac1.png" class="w-full h-52 object-contain mb-6" />
+          <img
+            src="img/neo.png"
+            class="w-full h-52 object-contain mb-6"
+            alt=""
+          />
 
-          <!-- Colors -->
           <div class="flex justify-center gap-2 mb-4">
             <span class="w-3 h-3 rounded-full bg-gray-300"></span>
             <span class="w-3 h-3 rounded-full bg-pink-200"></span>
@@ -130,8 +190,10 @@
             <span class="w-3 h-3 rounded-full bg-blue-500"></span>
           </div>
 
-          <p class="text-orange-500 text-sm">Baru</p>
-          <h3 class="text-3xl font-semibold mt-1">MacBook Neo</h3>
+          <p class="text-sm text-orange-500">Baru</p>
+
+          <h3 class="text-3xl font-semibold mt-2">MacBook Neo</h3>
+
           <p class="text-gray-600 mt-3">
             Keajaiban Mac dengan harga mengejutkan.
           </p>
@@ -144,45 +206,29 @@
           </a>
         </div>
 
-        <!-- Card 2 -->
+        <!-- CARD -->
         <div
-          class="min-w-[380px] bg-white rounded-3xl p-6 text-center shadow-sm"
+          class="min-w-[350px] bg-white rounded-3xl p-8 shadow-sm text-center"
         >
-          <img src="img/mac2.png" class="w-full h-52 object-contain mb-6" />
+          <img
+            src="img/air.png"
+            class="w-full h-52 object-contain mb-6"
+            alt=""
+          />
 
           <div class="flex justify-center gap-2 mb-4">
             <span class="w-3 h-3 rounded-full bg-gray-200"></span>
             <span class="w-3 h-3 rounded-full bg-gray-400"></span>
             <span class="w-3 h-3 rounded-full bg-black"></span>
-          </div>
+            </div>
+          <p class="text-sm text-orange-500">Baru</p>
 
-          <p class="text-orange-500 text-sm">Baru</p>
-          <h3 class="text-3xl font-semibold mt-1">MacBook Air 13” dan 15”</h3>
-          <p class="text-gray-600 mt-3">Tipis. Cepat. Andal dan portabel.</p>
+          <h3 class="text-3xl font-semibold mt-2">
+            MacBook Air 13” & 15”
+          </h3>
 
-          <a
-            href="#"
-            class="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full"
-          >
-            Selengkapnya
-          </a>
-        </div>
-
-        <!-- Card 3 -->
-        <div
-          class="min-w-[380px] bg-white rounded-3xl p-6 text-center shadow-sm"
-        >
-          <img src="img/mac3.png" class="w-full h-52 object-contain mb-6" />
-
-          <div class="flex justify-center gap-2 mb-4">
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-300"></span>
-          </div>
-
-          <p class="text-orange-500 text-sm">Baru</p>
-          <h3 class="text-3xl font-semibold mt-1">MacBook Pro 14” dan 16”</h3>
           <p class="text-gray-600 mt-3">
-            Laptop Mac tercanggih untuk tugas berat.
+            Tipis. Cepat. Andal dan portabel.
           </p>
 
           <a
@@ -193,22 +239,28 @@
           </a>
         </div>
 
-        <!-- Card 4 -->
+        <!-- CARD -->
         <div
-          class="min-w-[380px] bg-white rounded-3xl p-6 text-center shadow-sm"
+          class="min-w-[350px] bg-white rounded-3xl p-8 shadow-sm text-center"
         >
-          <img src="img/mac4.png" class="w-full h-52 object-contain mb-6" />
+          <img
+            src="img/macbook pro.png"
+            class="w-full h-52 object-contain mb-6"
+            alt=""
+          />
 
           <div class="flex justify-center gap-2 mb-4">
-            <span class="w-3 h-3 rounded-full bg-green-400"></span>
-            <span class="w-3 h-3 rounded-full bg-yellow-300"></span>
-            <span class="w-3 h-3 rounded-full bg-orange-400"></span>
-            <span class="w-3 h-3 rounded-full bg-red-400"></span>
+            <span class="w-3 h-3 rounded-full bg-black"></span>
+            <span class="w-3 h-3 rounded-full bg-gray-300"></span>
           </div>
+          <p class="text-sm text-orange-500">Baru</p>
 
-          <h3 class="text-3xl font-semibold mt-1">iMac</h3>
+          <h3 class="text-3xl font-semibold mt-2">
+            MacBook Pro 14” & 16”
+          </h3>
+
           <p class="text-gray-600 mt-3">
-            Desktop penuh warna dengan performa hebat.
+            Laptop Mac tercanggih untuk tugas berat.
           </p>
 
           <a
@@ -221,9 +273,42 @@
       </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 py-16 bg-[#f5f5f7]">
+    <!-- BANNER -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <div
+        class="bg-[#ededed] rounded-[35px] overflow-hidden grid md:grid-cols-2 items-center"
+      >
+        <!-- LEFT -->
+        <div class="px-10 md:px-20 py-16">
+          <h2 class="text-5xl font-semibold leading-tight">
+            Mac bisa melakukannya.
+          </h2>
+
+          <p class="mt-5 text-xl text-gray-700">
+            Lihat betapa mudahnya pindah ke Mac.
+          </p>
+
+          <a
+            href="#"
+            class="inline-block mt-6 text-blue-600 hover:underline"
+          >
+            Selengkapnya ›
+          </a>
+        </div>
+
+        <!-- RIGHT -->
+        <div>
+          <img
+            src="img/mac.png"
+            class="w-full h-full object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+     <section class="max-w-7xl mx-auto px-6 py-16 bg-[#f5f5f7]">
       <!-- Judul -->
-      <h2 class="text-5xl font-semibold mb-10">Kenali Mac lebih dalam.</h2>
+      <h2 class="text-5xl font-semibold mb-10">Kenali Apple Watch lebih dalam.</h2>
 
       <!-- Product Scroll -->
       <div class="flex gap-6 overflow-x-auto scrollbar-hide pb-4 scroll-smooth">
@@ -231,11 +316,11 @@
         <div
           class="min-w-[360px] h-[680px] rounded-3xl overflow-hidden relative"
         >
-          <img src="img/ipad1.jpg" class="w-full h-full object-cover" />
+          <img src="img/malam.png" class="w-full h-full object-cover" />
           <div class="absolute top-5 left-4 text-white">
-            <p class="text-xs opacity-80">Privasi + iPadOS 18</p>
+            <p class="text-xs opacity-80"></p>
             <h3 class="text-xl font-semibold leading-tight mt-1">
-              Penataan desktop fleksibel. Selesaikan banyak hal sekaligus.
+              
             </h3>
           </div>
         </div>
@@ -244,11 +329,11 @@
         <div
           class="min-w-[360px] h-[680px] rounded-3xl overflow-hidden relative"
         >
-          <img src="img/ipad2.jpg" class="w-full h-full object-cover" />
+          <img src="img/astronot.png" class="w-full h-full object-cover" />
           <div class="absolute top-5 left-4 text-white">
-            <p class="text-xs opacity-80">Produktivitas</p>
+            <p class="text-xs opacity-80"></p>
             <h3 class="text-xl font-semibold mt-1">
-              Tempat kerja di mana saja.
+              
             </h3>
           </div>
         </div>
@@ -257,10 +342,10 @@
         <div
           class="min-w-[360px] h-[680px] rounded-3xl overflow-hidden relative"
         >
-          <img src="img/ipad3.jpg" class="w-full h-full object-cover" />
+          <img src="img/pinky.png" class="w-full h-full object-cover" />
           <div class="absolute top-5 left-4 text-white">
-            <p class="text-xs opacity-80">Kreativitas</p>
-            <h3 class="text-xl font-semibold mt-1">Ekspresikan diri Anda.</h3>
+            <p class="text-xs opacity-80"></p>
+            <h3 class="text-xl font-semibold mt-1"></h3>
           </div>
         </div>
 
@@ -268,7 +353,7 @@
         <div
           class="min-w-[360px] h-[680px] rounded-3xl overflow-hidden relative"
         >
-          <img src="img/ipad4.jpg" class="w-full h-full object-cover" />
+          <img src="img/medsos.png" class="w-full h-full object-cover" />
           <div class="absolute top-5 left-4 text-white">
             <p class="text-xs opacity-80">Belajar</p>
             <h3 class="text-xl font-semibold mt-1">
@@ -301,8 +386,7 @@
           </div>
         </div>
       </div>
-
-      <!-- Tombol kanan kiri -->
+        <!-- Tombol kanan kiri -->
       <div class="flex justify-end gap-3 mt-6">
         <button class="w-9 h-9 rounded-full bg-gray-300 text-gray-700">
           ‹
@@ -314,284 +398,117 @@
     </section>
 
     <section class="max-w-7xl mx-auto px-6 py-16 bg-[#f5f5f7]">
-      <h2 class="text-5xl font-semibold mb-10">Esensial untuk Mac.</h2>
-      <div
-        class="max-w-7xl mx-auto bg-[#ededed] rounded-[35px] overflow-hidden grid md:grid-cols-2 items-center min-h-[500px]"
-      >
-        <!-- Kiri -->
-        <div class="px-10 md:px-20 py-16">
-          <h2
-            class="text-4xl md:text-5xl font-semibold text-black leading-tight"
-          >
-            Mac bisa melakukannya.
-          </h2>
-
-          <p class="mt-4 text-xl text-gray-700">
-            Lihat betapa mudahnya pindah ke Mac.
-          </p>
-
-          <a
-            href="#"
-            class="inline-block mt-6 text-blue-600 text-lg hover:underline"
-          >
-            Selengkapnya ›
-          </a>
-        </div>
-
-        <!-- Kanan -->
-        <div class="h-full">
-          <img
-            src="img/mac-switch.jpg"
-            alt="Mac"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="max-w-7xl mx-auto px-6 py-16 bg-[#f5f5f7]">
-      <!-- Judul -->
-      <h2 class="text-5xl font-semibold mb-12 max-w-7xl mx-auto">
-        Beralih ke Mac.
-      </h2>
-
-      <!-- Grid Card -->
-      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Card Kiri -->
-        <div
-          class="bg-white rounded-[28px] p-10 min-h-[520px] flex flex-col justify-between shadow-sm"
-        >
-          <div class="text-center">
-            <h3 class="text-white text-4xl font-semibold">iPad Pro</h3>
-
-            <p class="text-white text-xl mt-3 leading-relaxed">
-              Performa AI canggih dan kemampuan<br />
-              yang mengubah segalanya.
-            </p>
-
-            <p class="text-gray-400 text-sm mt-2">
-              Cek kembali untuk informasi ketersediaan
-            </p>
-          </div>
-
-          <img
-            src="img/ipad.png"
-            class="w-[340px] mx-auto object-contain mt-8"
-          />
-        </div>
-
-        <!-- Card Kanan -->
-        <div
-          class="bg-white rounded-[28px] p-10 min-h-[520px] flex flex-col justify-between shadow-sm"
-        >
-          <div class="text-center">
-            <h3 class="text-white text-4xl font-bold">
-              WATCH <span class="font-normal">ULTRA 3</span>
-            </h3>
-
-            <p class="text-white text-xl mt-3">Partner tangguh</p>
-          </div>
-
-          <img
-            src="img/watch.png"
-            class="w-[300px] mx-auto object-contain mt-8"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="max-w-7xl mx-auto px-6 py-16 bg-[#f5f5f7]">
       <div>
-        <div class="flex items-center gap-2 mb-4">
-          <h2 class="text-3xl font-semibold">Jelajahi dunia Apple.</h2>
-          <a class="text-blue-500 text-xs"
-            >Pelajari cara perangkat Apple bekerja lebih baik bersama ></a
+        <h2 class="text-3xl font-semibold mb-6">
+          Esensial untuk Mac.
+        </h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div
+            class="bg-white rounded-2xl p-5 text-center shadow-sm min-h-[260px] flex flex-col justify-between"
           >
-        </div>
-        <div
-          class="bg-white rounded-3xl p-6 flex gap-4 shadow-sm min-h-[320px]"
-        >
-          <div class="w-1/2">
-            <div class="flex justify-between items-start">
-              <h3 class="text-4xl font-semibold leading-tight">
-                Mac dan iPhone
-              </h3>
-              <span class="text-gray-400">˄</span>
+            <div>
+              <h3 class="font-semibold text-lg">Airpods</h3>
+              <p class="text-xs text-gray-500 mt-1">
+                Jelajahi semua model AirPods
+                dan temukan yang terbaik untuk anda.
+              </p>
+              <a class="text-blue-500 text-xs mt-2 inline-block"
+                >Selengkapnya ></a
+              >
             </div>
-            <p class="text-sm text-gray-700 mt-3 leading-5">
-              Menjawab panggilan atau pesan dari iPhone langsung pada Mac. Lihat
-              dan kendalikan Semua yang ada di iPhone Anda dari Mac dengan
-              Pencadangan iPhone dan Aktivitas Langsung. Gunakan Papan Klip
-              Universal untuk menyalin gambar, video, atau teks dari iPhone,
-              lalu tempelkan ke aplikasi lain di Mac yang berdekatan, dan
-              berkati iCloud Anda bisa mengakses file dari iPhone atau Mac anda.
-              Dan masih banyak lagi.
-            </p>
-            <h4 class="text-4xl font-semibold mt-6">Mac dan iPad</h4>
-            <div class="text-gray-400">˅</div>
-          </div>
-          <div class="w-1/2 flex items-center justify-center">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/MacBook_and_iPhone.png/640px-MacBook_and_iPhone.png"
-              class="max-h-64 object-contain"
+              src="img/airpods.png"
+              class="h-36 object-contain mx-auto"
             />
           </div>
+
+          <div
+            class="bg-white rounded-2xl p-5 text-center shadow-sm min-h-[260px] flex flex-col justify-between"
+          >
+            <img
+              src="img/komputer.png"
+              class="h-36 object-contain mx-auto"
+            />
+            <div>
+              <h3 class="font-semibold text-lg leading-5">
+                Studio Display
+              </h3>
+              <p class="text-xs text-gray-500 mt-1">
+                Layar Retina 5K 27 inci berpadu memukau dengan Mac.
+              </p>
+              <a class="text-blue-500 text-xs mt-2 inline-block"
+                >Selengkapnya ></a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer Apple Style -->
-    <footer class="bg-[#f5f5f7] text-[#6e6e73] text-[12px] mt-10">
-      <div class="max-w-[980px] mx-auto px-4">
-        <!-- Top Notes -->
-        <div class="py-5 border-b border-[#d2d2d7] leading-5 space-y-3">
-          <p>Langganan diperlukan untuk Apple TV.</p>
-          <p>
-            Fitur dapat berubah sewaktu-waktu. Beberapa fitur, aplikasi, dan
-            layanan mungkin tersedia tidak di semua wilayah atau dalam semua
-            bahasa.
-          </p>
-        </div>
-
-        <!-- Footer Links -->
-        <div class="grid grid-cols-4 gap-10 py-6">
-          <!-- Column 1 -->
-          <div class="space-y-3">
-            <div>
-              <h3 class="font-semibold text-[#1d1d1f] mb-2">
-                Belanja dan Belajar
-              </h3>
-              <ul class="space-y-2">
-                <li><a href="#" class="hover:underline">Mac</a></li>
-                <li><a href="#" class="hover:underline">iPad</a></li>
-                <li><a href="#" class="hover:underline">iPhone</a></li>
-                <li><a href="#" class="hover:underline">Watch</a></li>
-                <li><a href="#" class="hover:underline">AirPods</a></li>
-                <li><a href="#" class="hover:underline">TV & Rumah</a></li>
-                <li><a href="#" class="hover:underline">AirTag</a></li>
-              </ul>
-            </div>
-
-            <div class="pt-3">
-              <h3 class="font-semibold text-[#1d1d1f] mb-2">Dompet Apple</h3>
-              <ul>
-                <li><a href="#" class="hover:underline">Dompet</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Column 2 -->
-          <div class="space-y-3">
-            <div>
-              <h3 class="font-semibold text-[#1d1d1f] mb-2">Akun</h3>
-              <ul class="space-y-2">
-                <li>
-                  <a href="#" class="hover:underline">Kelola Akun Apple Anda</a>
-                </li>
-                <li><a href="#" class="hover:underline">iCloud.com</a></li>
-              </ul>
-            </div>
-
-            <div class="pt-3">
-              <h3 class="font-semibold text-[#1d1d1f] mb-2">Hiburan</h3>
-              <ul class="space-y-2">
-                <li><a href="#" class="hover:underline">Apple One</a></li>
-                <li><a href="#" class="hover:underline">Apple TV</a></li>
-                <li><a href="#" class="hover:underline">Apple Music</a></li>
-                <li><a href="#" class="hover:underline">Apple Arcade</a></li>
-                <li><a href="#" class="hover:underline">Apple Fitness+</a></li>
-                <li><a href="#" class="hover:underline">Apple Podcasts</a></li>
-                <li><a href="#" class="hover:underline">Apple Books</a></li>
-                <li><a href="#" class="hover:underline">App Store</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Column 3 -->
-          <div class="space-y-6">
-            <div>
-              <h3 class="font-semibold text-[#1d1d1f] mb-2">Untuk Bisnis</h3>
-              <ul>
-                <li>
-                  <a href="#" class="hover:underline">Apple dan Bisnis</a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 class="font-semibold text-[#1d1d1f] mb-2">
-                Untuk Pendidikan
-              </h3>
-              <ul>
-                <li>
-                  <a href="#" class="hover:underline">Apple dan Pendidikan</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Column 4 -->
-          <div class="space-y-6">
-            <div>
-              <h3 class="font-semibold text-[#1d1d1f] mb-2">
-                Nilai-nilai Apple
-              </h3>
-              <ul class="space-y-2">
-                <li><a href="#" class="hover:underline">Aksesibilitas</a></li>
-                <li><a href="#" class="hover:underline">Pendidikan</a></li>
-                <li><a href="#" class="hover:underline">Lingkungan</a></li>
-                <li><a href="#" class="hover:underline">Privasi</a></li>
-                <li>
-                  <a href="#" class="hover:underline">Inovasi Rantai Pasok</a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 class="font-semibold text-[#1d1d1f] mb-2">Tentang Apple</h3>
-              <ul class="space-y-2">
-                <li><a href="#" class="hover:underline">Newsroom</a></li>
-                <li>
-                  <a href="#" class="hover:underline">Kepemimpinan Apple</a>
-                </li>
-                <li><a href="#" class="hover:underline">Investor</a></li>
-                <li>
-                  <a href="#" class="hover:underline">Etika & Kepatuhan</a>
-                </li>
-                <li><a href="#" class="hover:underline">Acara</a></li>
-                <li><a href="#" class="hover:underline">Hubungi Apple</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Retail -->
-        <div class="border-b border-[#d2d2d7] pb-4">
-          <p>
-            <a href="#" class="text-[#06c] hover:underline">Temukan retailer</a>
-            di dekat Anda.
-          </p>
-        </div>
-
-        <!-- Bottom Footer -->
+    <section class="max-w-7xl mx-auto px-6 py-16 bg-[#f5f5f7]">
+        <h2 class="text-3xl font-semibold mb-5">Pasangan sempurna.</h2>
         <div
-          class="py-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-[12px]"
+          class="bg-white rounded-3xl p-5 shadow-sm flex gap-4 min-h-[310px]"
         >
-          <div class="flex flex-wrap items-center gap-3">
-            <p>
-              Hak cipta © 2026 Apple Inc. Seluruh hak cipta dilindungi
-              undang-undang.
+          <div class="w-[42%]">
+            <div class="flex justify-between items-start">
+              <h3 class="font-semibold text-lg">Mac dan iPhone</h3>
+              <span class="text-gray-400">˄</span>
+            </div>
+            <p class="text-[11px] text-gray-600 leading-4 mt-3">
+              Menjawab panggilan atau pesan dari iPhone langsung pada Mac. Lihat dan kendalikan semua yang ada di iPhone Anda dari Mac Anda dengan Pencerminan iPhone dan Aktivitas Langsung.  Gunakan Papan Klip Universal untuk menyalin gambar, video, atau teks dari iPhone, lalu tempelkan ke aplikasi lain di Mac yang berdekatan. Dan berkat iCloud, Anda bisa mengakses file dari iPhone atau Mac Anda. Dan masih banyak lagi.
             </p>
 
-            <div class="flex flex-wrap gap-3">
-              <a href="#" class="hover:underline">Kebijakan Privasi</a>
-              <a href="#" class="hover:underline">Ketentuan Penggunaan</a>
-              <a href="#" class="hover:underline">Legal</a>
-              <a href="#" class="hover:underline">Peta Situs</a>
+            <div class="mt-5 flex justify-between items-center">
+              <h4 class="font-semibold text-lg">Mac dan iPad</h4>
+              <span class="text-gray-400">˅</span>
+            </div>
+            <div class="mt-3 flex justify-between items-center">
+              <h4 class="font-semibold text-lg leading-5">
+                Mac dan Apple Watch
+              </h4>
+              <span class="text-gray-400">˅</span>
             </div>
           </div>
 
-          <p>Indonesia</p>
+          <div class="w-[58%] flex items-center justify-center gap-2">
+            <img
+              src="img/muk.png"
+              class="h-40 object-contain"
+            />
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#f5f5f7] text-[#6e6e73] text-sm mt-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- TOP -->
+        <div class="py-6 border-b border-gray-300 space-y-3">
+          <p>Langganan diperlukan untuk Apple TV.</p>
+
+          <p>
+            Fitur dapat berubah sewaktu-waktu. Beberapa fitur mungkin tidak
+            tersedia di semua wilayah.
+          </p>
+        </div>
+
+        <!-- BOTTOM -->
+        <div
+          class="py-6 flex flex-col md:flex-row gap-4 justify-between items-center"
+        >
+          <p>
+            Hak cipta © 2026 Apple Inc. Seluruh hak cipta dilindungi
+            undang-undang.
+          </p>
+
+          <div class="flex gap-4">
+            <a href="#" class="hover:underline">Privasi</a>
+            <a href="#" class="hover:underline">Legal</a>
+            <a href="#" class="hover:underline">Peta Situs</a>
+          </div>
         </div>
       </div>
     </footer>
